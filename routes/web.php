@@ -1,5 +1,5 @@
 <?php
-
+use App\Controllers;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::resource('employees', 'EmployeesController');
