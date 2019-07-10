@@ -21,18 +21,18 @@
       
       <!-- Text input-->
       <div class="form-group">
-        <label class="col-md-4 control-label" for="firstName">first name</label>  
+        <label class="col-md-4 control-label" for="title">Title</label>  
         <div class="col-md-4">
-        <input id="first_name" name="first_name" type="text" placeholder="first" class="form-control input-md" required="" value="{{$notification->first_name}}">
+        <input id="title" name="title" type="text" placeholder="title" class="form-control input-md" required="" value="{{$notification->title}}">
           
         </div>
       </div>
       
       <!-- Text input-->
       <div class="form-group">
-        <label class="col-md-4 control-label" for="lastName">last name</label>  
+        <label class="col-md-4 control-label" for="Description">Description</label>  
         <div class="col-md-4">
-        <input id="last_name" name="last_name" type="text" placeholder="last" class="form-control input-md" required="" value="{{$notification->last_name}}">
+        <input id="description" name="description" type="text" placeholder="last" class="form-control input-md" required="" value="{{$notification->description}}">
           
         </div>
       </div>

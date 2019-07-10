@@ -42,8 +42,8 @@ class NotificationsController extends Controller
         //
         // dd($request->all());
         $notification = new Notification();
-        $notification->first_name = $request->first_name ?? null;
-        $notification->last_name = $request->last_name ?? null;
+        $notification->title = $request->title ?? null;
+        $notification->description = $request->description ?? null;
         $notification->save();
         return redirect('/notifications');
     }
@@ -81,8 +81,8 @@ class NotificationsController extends Controller
     {
         //
         $notification = Notification::find($id);
-        $notification->first_name = $request->first_name;
-        $notification->last_name  = $request->last_name;
+        $notification->title = $request->title;
+        $notification->description  = $request->description;
         $notification->save();
         return redirect('/notifications');
     }

@@ -15,8 +15,8 @@
   <table class="table table-hover">
     <thead>
       <tr>
-        <th>Firstname</th>
-        <th>Lastname</th>
+        <th>Title</th>
+        <th>Description</th>
         <th>&nbsp;</th>
       </tr>
     </thead>
@@ -24,8 +24,8 @@
 
     @foreach($notificationList as $notification)
     <tr>
-        <td>{{$notification->first_name}}</td>
-        <td>{{$notification->last_name}}</td>
+        <td>{{$notification->title}}</td>
+        <td>{{$notification->description}}</td>
         <td>
             <span class="pull-right">
                 <form method="post" action="/notifications/{{$notification->id}}"> 
