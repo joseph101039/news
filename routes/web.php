@@ -16,4 +16,4 @@ Route::get('/', function () {
 });
 
 
-Route::resource('employees', 'EmployeesController');
+Route::resource('notifications', 'NotificationsController');
